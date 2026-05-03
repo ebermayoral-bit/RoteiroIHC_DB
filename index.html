@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roteiros Morfológicos – DB Patologia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a href="#conteudo" class="skip-link">Ir para o conteúdo principal</a>
+
+  <header class="page-header">
+    <div class="header-inner">
+      <h1>Roteiros de Paineis Imunohistoquímicos</h1>
+    </div>
+  </header>
+
+  <!-- Botão de menu visível apenas em telas pequenas -->
+  <button class="nav-toggle" aria-expanded="false" aria-controls="sidebar-nav">
+    ☰ Índice
+  </button>
+
+  <div class="sidebar-overlay" aria-hidden="true"></div>
+
+  <div class="layout-wrapper">
+
+    <aside class="sidebar" id="sidebar-nav" aria-label="Navegação dos roteiros">
+      <nav>
+        <h2 class="sidebar-heading">Roteiros</h2>
+        <ul class="sidebar-list">
+          <li><a href="#introducao">Introdução</a></li>
+          <li><a href="#indice">Índice completo</a></li>
+          <li><a href="#modelo">Modelo de roteiro</a></li>
+          <li class="sidebar-divider" role="separator"></li>
+          <li><a href="#indSeerenciada">Neoplasia indSeerenciada</a></li>
+          <li><a href="#cup">CUP</a></li>
+          <li><a href="#mama">Mama</a></li>
+          <li><a href="#snc">SNC</a></li>
+          <li><a href="#tireoide">Tireoide e paratireoide</a></li>
+          <li><a href="#adrenal">Adrenal</a></li>
+          <li><a href="#cabeca-pescoco">Cabeça e pescoço</a></li>
+          <li><a href="#intratoracicos">Intratorácicos</a></li>
+          <li><a href="#utero">Útero</a></li>
+          <li><a href="#ovario">Ovário</a></li>
+          <li><a href="#placenta">Placenta</a></li>
+          <li><a href="#genital-masculino">Genital masculino</a></li>
+          <li><a href="#gonadas">Gônadas</a></li>
+          <li><a href="#urinario">Trato urinário</a></li>
+          <li><a href="#digestivo">Tubo digestivo</a></li>
+          <li><a href="#figado-pancreas">Fígado e pâncreas</a></li>
+          <li><a href="#partes-moles">Partes moles</a></li>
+          <li><a href="#linfo">Linfo-hematopoéticas</a></li>
+          <li><a href="#cutaneos">Cutâneos</a></li>
+          <li class="sidebar-divider" role="separator"></li>
+          <li><a href="#complexidade">Automação</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content" id="conteudo">
+
+      <section class="section" id="introducao">
+        <h2>Introdução</h2>
+        <p>
+        Este roteiro tem como objetivo organizar de forma estruturada a seleção de painéis imuno-histoquímicos, com base em critérios lógicos e sequenciais. A abordagem 	proposta segue etapas fundamentais do raciocínio diagnóstico, incluindo a definição da histogênese, a caracterização diagnóstica, a determinação do sítio 	  	primário e, quando aplicável, a avaliação de fatores prognósticos.
+        </p>
+        <div class="note">
+        <strong>Nota:</strong> A aplicação sistematizada desses critérios visa padronizar a elaboração dos laudos anátomo-patológicos em imunohistoquímica, promovendo maior 	consistência técnica e facilitando a interpretação clínica dos achados.
+        </div>
+      </section>
+
+      <section class="section" id="indice">
+        <h2>Índice dos roteiros</h2>
+        <div class="nav-grid">
+          <a class="nav-link" href="#indSeerenciada">Neoplasia maligna indSeerenciada</a>
+          <a class="nav-link" href="#cup">Carcinoma metastático de origem indeterminada</a>
+          <a class="nav-link" href="#mama">Carcinoma mamário</a>
+          <a class="nav-link" href="#snc">Tumores do sistema nervoso central</a>
+          <a class="nav-link" href="#tireoide">Tireoide e paratireoide</a>
+          <a class="nav-link" href="#adrenal">Adrenal</a>
+          <a class="nav-link" href="#cabeca-pescoco">Cabeça e pescoço</a>
+          <a class="nav-link" href="#intratoracicos">Tumores intratorácicos</a>
+          <a class="nav-link" href="#utero">Útero</a>
+          <a class="nav-link" href="#ovario">Ovário</a>
+          <a class="nav-link" href="#placenta">Placenta</a>
+          <a class="nav-link" href="#genital-masculino">Trato genital masculino</a>
+          <a class="nav-link" href="#gonadas">Gônadas</a>
+          <a class="nav-link" href="#urinario">Trato urinário</a>
+          <a class="nav-link" href="#digestivo">Tubo digestivo</a>
+          <a class="nav-link" href="#figado-pancreas">Fígado e pâncreas</a>
+          <a class="nav-link" href="#partes-moles">Partes moles</a>
+          <a class="nav-link" href="#linfo">Neoplasias linfo-hematopoéticas</a>
+          <a class="nav-link" href="#cutaneos">Tumores cutâneos</a>
+        </div>
+      </section>
+
+      <section class="section" id="modelo">
+        <h2>Modelo reutilizável de roteiro</h2>
+        <div class="content-grid">
+          <article class="card">
+            <h3>1. Eixo decisório inicial</h3>
+            <p>Define a primeira separação diagnóstica: epitelial, hematolinfoide, melanocítico, mesenquimal, germinativo, neuroendócrino ou metastático.</p>
+          </article>
+          <article class="card">
+            <h3>2. Morfologia</h3>
+            <p>Organiza padrão arquitetural, citologia, estroma, necrose, mitoses e achados dSeerenciais relevantes.</p>
+          </article>
+          <article class="card">
+            <h3>3. Painel inicial</h3>
+            <p>Lista marcadores de triagem e confirmação de linhagem.</p>
+          </article>
+          <article class="card">
+            <h3>4. Algoritmo</h3>
+            <p>Traduz o raciocínio em regras sequenciais aplicáveis a LIS, painel sugerido ou distribuição de casos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="indSeerenciada">
+        <h2>Neoplasia maligna indSeerenciada</h2>
+        <h3>Eixo decisório</h3>
+        <ul>
+          <li>Carcinoma</li>
+          <li>Linfoma</li>
+          <li>Melanoma</li>
+          <li>Sarcoma</li>
+        </ul>
+        <h3>Painel inicial</h3>
+        <div class="code-block">AE1/AE3
+
+CD45
+S100 / SOX10
+Desmina, conforme morfologia</div>
+        <h3>Lógica operacional</h3>
+        <div class="code-block">Se tumor indSeerenciado:
+aplicar painel de linhagem
+
+Se AE1/AE3 positivo:
+seguir algoritmo de carcinoma
+
+Se CD45 positivo:
+seguir algoritmo linfoide
+
+Se SOX10/S100 positivo:
+considerar melanoma ou tumor neural</div>
+      </section>
+
+      <section class="section" id="cup">
+        <h2>Carcinoma metastático de origem indeterminada</h2>
+        <h3>Morfologia</h3>
+        <ul>
+          <li>Padrão sólido, glandular, trabecular ou indSeerenciado.</li>
+          <li>Necrose frequente.</li>
+          <li>Ausência de dSeerenciação específica.</li>
+        </ul>
+        <h3>Painel central</h3>
+        <div class="code-block">AE1/AE3
+
+CK7
+CK20
+CDX2
+SATB2
+TTF1
+PAX8
+GATA3
+SOX10</div>
+        <h3>Matriz CK7 / CK20</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Perfil</th>
+              <th>Hipóteses principais</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CK7+ / CK20-</td>
+              <td>Pulmão, mama, ovário, endométrio</td>
+            </tr>
+            <tr>
+              <td>CK7- / CK20+</td>
+              <td>Colorretal</td>
+            </tr>
+            <tr>
+              <td>CK7+ / CK20+</td>
+              <td>Pancreatobiliar, gástrico, urotelial</td>
+            </tr>
+            <tr>
+              <td>CK7- / CK20-</td>
+              <td>Rim, fígado, próstata, adrenal</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" id="mama">
+        <h2>Carcinoma mamário</h2>
+        <h3>Padrões morfológicos</h3>
+        <ul>
+          <li>Ductal NST: ninhos, túbulos, blocos sólidos e estroma desmoplásico.</li>
+          <li>Lobular: células discoesas, fileira indiana e padrão em alvo.</li>
+          <li>Mucinoso: células em lagos de mucina.</li>
+          <li>Micropapilar: agregados sem eixo fibrovascular verdadeiro.</li>
+          <li>Metaplásico: áreas escamosas, fusocelulares, condroides ou osteoides.</li>
+        </ul>
+        <h3>Painel</h3>
+        <div class="code-block">
+GATA3
+TRPS1
+ER
+PR
+HER2
+Ki-67
+E-caderina
+</div>
+      </section>
+
+      <section class="section" id="snc">
+        <h2>Tumores do SNC</h2>
+        <h3>Eixos principais</h3>
+        <ul>
+          <li>Tumor glial</li>
+          <li>Tumor neuronal ou glioneuronal</li>
+          <li>Tumor embrionário</li>
+          <li>Tumor meníngeo</li>
+          <li>Linfoma</li>
+          <li>Metástase</li>
+        </ul>
+        <h3>Painéis por cenário</h3>
+        <div class="code-block">Glial: GFAP, OLIG2, IDH1 R132H, ATRX, p53, Ki-67
+
+Meningioma: EMA, PR
+Linfoma: CD45, CD20, CD3
+Metástase: AE1/AE3, CK7, CK20, TTF1, PAX8, GATA3, SOX10</div>
+      </section>
+
+      <section class="section" id="tireoide">
+        <h2>Tumores de tireoide e paratireoide</h2>
+        <h3>Eixo decisório</h3>
+        <ul>
+          <li>Tumor folicular derivado da tireoide</li>
+          <li>Carcinoma medular</li>
+          <li>Carcinoma anaplásico</li>
+          <li>Lesão paratireoideana</li>
+          <li>Metástase</li>
+        </ul>
+        <h3>Painel dSeerencial</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Marcador</th>
+              <th>Tireoide</th>
+              <th>Paratireoide</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tireoglobulina</td>
+              <td>Positivo</td>
+              <td>Negativo</td>
+            </tr>
+            <tr>
+              <td>TTF1</td>
+              <td>Positivo</td>
+              <td>Negativo</td>
+            </tr>
+            <tr>
+              <td>PTH</td>
+              <td>Negativo</td>
+              <td>Positivo</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" id="adrenal">
+        <h2>Tumores da adrenal</h2>
+        <h3>Eixo decisório</h3>
+        <ul>
+          <li>Tumor cortical adrenal</li>
+          <li>Feocromocitoma / paraganglioma</li>
+          <li>Metástase</li>
+          <li>Linfoma</li>
+          <li>Tumor retroperitoneal simulador</li>
+        </ul>
+        <h3>Painel</h3>
+        <div class="code-block">Cortical: SF1, inibina, Melan-A, calretinina, Ki-67
+
+Feocromocitoma: chromogranin, synaptophysin, S100/SOX10
+Metástase: AE1/AE3, CK7, CK20, TTF1, PAX8, GATA3, CDX2, SOX10</div>
+      </section>
+
+      <section class="section" id="cabeca-pescoco">
+        <h2>Tumores de cabeça e pescoço</h2>
+        <h3>Eixo decisório</h3>
+        <ul>
+          <li>Carcinoma escamoso</li>
+          <li>Tumor de glândula salivar</li>
+          <li>Tumor neuroendócrino</li>
+          <li>Linfoma</li>
+          <li>Melanoma</li>
+          <li>Metástase</li>
+        </ul>
+        <h3>Algoritmo</h3>
+        <div class="code-block">Se padrão escamoso:
+AE1/AE3, p40, CK5/6
+avaliar p16 se orofaringe
+
+Se padrão glandular:
+CK7, S100, SOX10, p63
+considerar tumor salivar
+
+Se indSeerenciado:
+AE1/AE3, CD45, SOX10</div>
+      </section>
+
+      <section class="section" id="intratoracicos">
+        <h2>Tumores intratorácicos</h2>
+        <h3>Principais grupos</h3>
+        <ul>
+          <li>Tumor pulmonar primário</li>
+          <li>Metástase pulmonar</li>
+          <li>Tumor neuroendócrino</li>
+          <li>Tumor pleural</li>
+          <li>Tumor mediastinal</li>
+          <li>Linfoma</li>
+        </ul>
+        <h3>Painel</h3>
+        <div class="code-block">Adenocarcinoma pulmonar: TTF1, Napsin A, CK7
+
+Escamoso: p40, CK5/6
+Neuroendócrino: synaptophysin, chromogranin, CD56
+Mesotelioma: calretinina, WT1, D2-40, CK5/6</div>
+      </section>
+
+      <section class="section" id="utero">
+        <h2>Tumores do trato genital feminino – útero</h2>
+        <h3>Eixos</h3>
+        <ul>
+          <li>Tumores epiteliais endometriais</li>
+          <li>Tumores mesenquimais miometriais</li>
+          <li>Tumores mistos müllerianos</li>
+          <li>Tumores do colo uterino</li>
+          <li>Metástases</li>
+        </ul>
+        <h3>Painel</h3>
+        <div class="code-block">Endométrio: ER, PR, PAX8, p53, p16
+
+Colo uterino: p16, p40, CK5/6, CEA
+Mesenquimal: desmina, SMA, h-caldesmon
+Estroma endometrial: CD10, ER, PR</div>
+      </section>
+
+      <section class="section" id="ovario">
+        <h2>Tumores do ovário</h2>
+        <h3>Eixo decisório</h3>
+        <ul>
+          <li>Tumores epiteliais</li>
+          <li>Tumores de células germinativas</li>
+          <li>Tumores do estroma / cordão sexual</li>
+          <li>Metástases para ovário</li>
+        </ul>
+        <h3>Painel</h3>
+        <div class="code-block">Epitelial: PAX8, WT1, p53, ER, PR
+
+Germinativo: SALL4, OCT3/4, AFP, beta-hCG
+Estromal: inibina, calretinina, FOXL2
+Metástase GI: CK7, CK20, CDX2, SATB2</div>
+      </section>
+
+      <section class="section" id="placenta">
+        <h2>Tumores placentários / doença trofoblástica gestacional</h2>
+        <h3>Eixo decisório</h3>
+        <ul>
+          <li>Mola hidatSeorme completa ou parcial</li>
+          <li>Mola invasora</li>
+          <li>Coriocarcinoma</li>
+          <li>Tumor trofoblástico do sítio placentário</li>
+          <li>Tumor trofoblástico epitelioide</li>
+        </ul>
+        <h3>Painel</h3>
+        <div class="code-block">p57
+
+hCG
+hPL
+Inibina
+p63
+Ki-67</div>
+      </section>
+
+      <section class="section" id="genital-masculino">
+        <h2>Tumores do trato genital masculino</h2>
+        <h3>Grupos</h3>
+        <ul>
+          <li>Tumores testiculares germinativos</li>
+          <li>Tumores do estroma / cordão sexual</li>
+          <li>Linfoma testicular</li>
+          <li>Adenocarcinoma prostático</li>
+          <li>Carcinoma escamoso peniano</li>
+        </ul>
+        <h3>Painel</h3>
+        <div class="code-block">Germinativo: SALL4, OCT3/4, AFP, CD30, hCG
+
+Estromal: inibina, calretinina, SF1
+Próstata: PSA, Prostein, Racemase
+Pênis: p40, CK5/6, p16</div>
+      </section>
+
+      <section class="section" id="gonadas">
+        <h2>Tumores gonadais masculino e feminino</h2>
+        <h3>Eixo decisório</h3>
+        <ul>
+          <li>Tumores de células germinativas</li>
+          <li>Tumores do estroma / cordão sexual</li>
+          <li>Gonadoblastoma</li>
+          <li>Metástases</li>
+          <li>Linfoma, especialmente testicular</li>
+        </ul>
+        <h3>Algoritmo</h3>
+        <div class="code-block">Se jovem + tumor gonadal:
+priorizar germinativo
+solicitar SALL4 e OCT3/4
+
+Se padrão sólido unSeorme:
+considerar estromal
+solicitar inibina e SF1
+
+Se idoso + massa testicular:
+excluir linfoma</div>
+      </section>
+
+      <section class="section" id="urinario">
+        <h2>Tumores do trato urinário</h2>
+        <h3>Eixo decisório</h3>
+        <ul>
+          <li>Carcinoma urotelial</li>
+          <li>Carcinoma renal</li>
+          <li>Tumor prostático envolvendo via urinária</li>
+          <li>Carcinoma escamoso</li>
+          <li>Tumor neuroendócrino</li>
+          <li>Metástase</li>
+        </ul>
+        <h3>DSeerencial urotelial versus renal</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Marcador</th>
+              <th>Urotelial</th>
+              <th>Renal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>GATA3</td>
+              <td>Positivo</td>
+              <td>Negativo</td>
+            </tr>
+            <tr>
+              <td>p63 / p40</td>
+              <td>Positivo</td>
+              <td>Negativo</td>
+            </tr>
+            <tr>
+              <td>PAX8</td>
+              <td>Negativo</td>
+              <td>Positivo</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" id="digestivo">
+        <h2>Tumores do tubo digestivo</h2>
+        <h3>Eixo decisório</h3>
+        <ul>
+          <li>Adenocarcinoma</li>
+          <li>Tumor neuroendócrino</li>
+          <li>GIST</li>
+          <li>Linfoma</li>
+          <li>Metástase</li>
+        </ul>
+        <h3>Painel mínimo</h3>
+        <div class="code-block">
+CK7
+CK20
+CDX2
+SATB2</div>
+        <h3>Algoritmo</h3>
+        <div class="code-block">Se padrão glandular:
+CK7, CK20, CDX2, SATB2
+
+Se CK20+/CDX2+/SATB2+:
+favorecer colorretal
+
+Se padrão fusocelular:
+CD117, DOG1
+
+Se padrão neuroendócrino:
+synaptophysin, chromogranin, Ki-67</div>
+      </section>
+
+      <section class="section" id="figado-pancreas">
+        <h2>Tumores de fígado e pâncreas</h2>
+        <h3>Eixo decisório</h3>
+        <ul>
+          <li>Tumor hepático primário</li>
+          <li>Tumor pancreático primário</li>
+          <li>Metástase</li>
+          <li>Tumor neuroendócrino</li>
+        </ul>
+        <h3>Painel</h3>
+        <div class="code-block">Hepatocelular: HepPar1, Arginase-1, Glypican-3, AFP
+
+Colangiocarcinoma: CK7, CK19, CA19-9
+Pâncreas ductal: CK7, CK19, CA19-9, SMAD4
+Metástase: CK7, CK20, CDX2, SATB2, TTF1, PAX8, GATA3</div>
+      </section>
+
+      <section class="section" id="partes-moles">
+        <h2>Tumores de partes moles</h2>
+        <h3>Eixos</h3>
+        <ul>
+          <li>Adipocítico</li>
+          <li>Muscular liso ou esquelético</li>
+          <li>Vascular</li>
+          <li>Neural</li>
+          <li>Fibroblástico / miofibroblástico</li>
+          <li>Sarcoma indSeerenciado</li>
+        </ul>
+        <h3>Painel inicial</h3>
+        <div class="code-block">AE1/AE3
+
+CD45
+S100 / SOX10
+Desmina
+CD34
+SMA</div>
+      </section>
+
+      <section class="section" id="linfo">
+        <h2>Neoplasias linfo-hematopoéticas</h2>
+        <h3>Eixo decisório</h3>
+        <ul>
+          <li>Linhagem B</li>
+          <li>Linhagem T/NK</li>
+          <li>Linhagem mieloide</li>
+          <li>Neoplasia plasmocitária</li>
+          <li>ProlSeeração reacional</li>
+        </ul>
+        <h3>Painel inicial</h3>
+        <div class="code-block">CD45
+
+CD20
+CD3
+CD138
+CD30
+Ki-67</div>
+        <h3>Algoritmo</h3>
+        <div class="code-block">Se CD45 positivo:
+avaliar CD20 e CD3
+
+Se CD20 positivo:
+linhagem B
+
+Se CD3 positivo:
+linhagem T
+
+Se CD138 positivo:
+avaliar restrição kappa/lambda
+
+Se MPO positivo:
+linhagem mieloide</div>
+      </section>
+
+      <section class="section" id="cutaneos">
+        <h2>Tumores cutâneos</h2>
+        <h3>Eixo decisório</h3>
+        <ul>
+          <li>Tumor epitelial queratinocítico</li>
+          <li>Tumor melanocítico</li>
+          <li>Tumor anexial</li>
+          <li>Tumor mesenquimal</li>
+          <li>Linfoma cutâneo</li>
+          <li>Metástase cutânea</li>
+        </ul>
+        <h3>Painel</h3>
+        <div class="code-block">Epitelial: AE1/AE3, p40, CK5/6
+
+Melanocítico: S100, SOX10, Melan-A, HMB45
+Anexial: CK7, EMA, p63, CEA
+Linfoide: CD45, CD20, CD3
+Metástase: CK7, CK20, TTF1, PAX8, GATA3, SOX10</div>
+      </section>
+
+      <section class="section" id="complexidade">
+        <h2>ClassSeicação operacional por facilidade de automação</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Grupo</th>
+              <th>Facilidade de automação</th>
+              <th>JustSeicativa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Linfo-hematopoético</td>
+              <td>Alta</td>
+              <td>Painéis padronizados e forte dependência de marcadores de linhagem.</td>
+            </tr>
+            <tr>
+              <td>Tubo digestivo</td>
+              <td>Alta</td>
+              <td>Eixo CK7, CK20, CDX2 e SATB2 é altamente estruturável.</td>
+            </tr>
+            <tr>
+              <td>Mama</td>
+              <td>Alta</td>
+              <td>Painéis diagnósticos e terapêuticos bem estabelecidos.</td>
+            </tr>
+            <tr>
+              <td>Pele</td>
+              <td>Moderada</td>
+              <td>Morfologia pesa mais, mas há bons marcadores de linhagem.</td>
+            </tr>
+            <tr>
+              <td>Partes moles</td>
+              <td>Baixa</td>
+              <td>Alta heterogeneidade e necessidade frequente de correlação molecular.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+  <div class="footer-wrap">
+    <footer class="page-footer">
+      <p>
+        Documento HTML estruturado para organização dos roteiros morfológicos discutidos nesta conversa.
+        Conteúdo destinado a uso interno, revisão técnica e expansão futura.
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
